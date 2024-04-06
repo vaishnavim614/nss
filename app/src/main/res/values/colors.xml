@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="mainBg">@color/transparent</color>
+
+    <color name="kesar">#e69500</color>
+    <color name="red">#f00</color>
+    <color name="greenNic">#008f00</color>
+    <color name="bottom_sheet_text">@color/colorPrimaryDark</color>
+    <color name="sbColorText">@color/white</color>
+    <color name="colorStartLogin">#7CE0FF</color>
+    <color name="colorLoginPrim">#5E99FF</color>
+    <color name="colorLoginPrimD">#0B4FC5</color>
+    <color name="colorPrimaryLight">#DAEBFB</color>
+    <color name="summary">#DAEBFB</color>
+    <color name="ripple">#DAEBFB</color>
+    <color name="colorPrimary">#5E99FF</color>
+    <color name="colorPrimaryDark">#0B4FC5</color>
+    <color name="colorAccent">#18FFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="blackGrey">#3A3A3A</color>
+    <color name="black">#000000</color>
+    <color name="grey">#656565</color>
+    <color name="lightGrey">#1A000000</color>
+    <color name="blackish">#272727</color>
+    <color name="signupHint">#66040404</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="one">#fe2c83</color>
+    <color name="two">#2bff89</color>
+    <color name="thr">#D1BD00</color>
+    <color name="four">#FF8400</color>
+    <color name="five">#fa8072</color>
+    <color name="six">#00BCBC</color>
+    <color name="sev">#ff69b4</color>
+    <color name="eig">#0097A7</color>
+
+    <color name="off_white">#f7f8f3</color>
+    <color name="pastel_red">#B3FF0000</color>
+    <color name="pastel_pink">#99ff69b4</color>
+    <color name="pastel_green">#CC2BFF89</color>
+    <color name="pastel_cyan">#00DCD3</color>
+    <color name="pastel_blue">#9903A9F4</color>
+    <color name="cyan">#00FFEA</color>
+    <color name="help_start">#4EB8FF</color>
+    <color name="help_end">#d4ecff</color>
+    <color name="greyWhite">#F5F5F5</color>
+    <color name="regBoxBg">#0D000000</color>
+    <color name="design_snackbar_background_color" tools:override="true">@color/colorPrimaryDark
+    </color>
+    <color name="shimmer_bg">#26000000</color>
+    <color name="wave_border">#99000000</color>
+    <color name="colorPrimaryShadow">#0044B8</color>
+</resources>

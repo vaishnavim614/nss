@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/space_10dp">
+
+    <View
+        android:layout_width="@dimen/space_20dp"
+        android:layout_height="@dimen/space_3dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space_20dp"
+        android:alpha=".6"
+        android:background="@drawable/help_round_bg"
+        android:backgroundTint="@color/grey" />
+
+
+    <LinearLayout
+        android:id="@+id/container_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_bold"
+            android:gravity="start"
+            android:paddingBottom="@dimen/padding_5dp"
+            android:text="Details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans_bold"
+                android:paddingTop="@dimen/padding_5dp"
+                android:paddingBottom="@dimen/padding_5dp"
+                android:text="Title: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/actTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans"
+                android:paddingTop="8dp"
+                android:paddingBottom="@dimen/padding_5dp"
+                android:textColor="@color/blackish"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/actDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans"
+            android:textColor="@color/blackGrey"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_bold"
+            android:paddingTop="@dimen/space_10dp"
+            android:text="Summary: "
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/actHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans"
+                android:paddingTop="@dimen/padding_5dp"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/actDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans"
+                android:paddingTop="@dimen/padding_5dp"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans_bold"
+                android:text="Status: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/actState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans_bold"
+                android:paddingTop="@dimen/padding_5dp"
+                android:textColor="@color/blackish"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/sheet_frame"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:visibility="gone" />
+</LinearLayout>

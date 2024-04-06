@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/replace2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/off_white"
+    android:layout_height="match_parent"
+    tools:context=".ui.work.WorkFragment">
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/space_10dp"
+        android:id="@+id/camp_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/camp_main_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/camp_act"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ripple_light"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:focusable="true"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_10dp"
+                    android:text="Enter Camp Activity"
+                    android:textColor="@color/blackGrey"
+                    android:textSize="@dimen/text_18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/camp_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ripple_light"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:focusable="true"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_10dp"
+                    android:text="Camp Diary"
+                    android:textColor="@color/blackGrey"
+                    android:textSize="@dimen/text_18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/blackish"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/camp_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ripple_light"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_arrow_down"
+                    android:focusable="true"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_10dp"
+                    android:text="Camp Details"
+                    android:textColor="@color/blackGrey"
+                    android:textSize="@dimen/text_18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

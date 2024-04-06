@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1500">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="0"
+               android:scaleX="0.7" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="0"
+               android:scaleY="0.7" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="15"
+               android:scaleX="1" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="15"
+               android:scaleY="1" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="40"
+               android:scaleX="0.5" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="40"
+               android:scaleY="0.5" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="60"
+               android:scaleX="0.7" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="60"
+               android:scaleY="0.7" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="75"
+               android:scaleX="0.5" />
+           <KeyAttribute
+               motion:transitionEasing="decelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="75"
+               android:scaleY="0.5" />
+           <KeyAttribute
+               android:scaleX="1"
+               motion:framePosition="90"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:transitionEasing="decelerate" />
+           <KeyAttribute
+               android:scaleY="1"
+               motion:framePosition="90"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:transitionEasing="decelerate" />
+           <KeyAttribute
+               motion:transitionEasing="accelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="100"
+               android:scaleX="50" />
+           <KeyAttribute
+               motion:transitionEasing="accelerate"
+               motion:motionTarget="@+id/actMainLinear"
+               motion:framePosition="100"
+               android:scaleY="50" />
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,1 @@
+gradlew bundle && gradlew assembleDebug && gradlew push

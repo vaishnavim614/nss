@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/act_bg_lines_card"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_10dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:fontFamily="@font/google_sans"
+            android:padding="@dimen/padding_5dp"
+            android:text="Enter Camp Description"
+            android:textColor="@color/blackish"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_10dp"
+            android:background="@color/transparent"
+            android:fontFamily="@font/google_sans"
+            android:hint="Type Something..."
+            android:inputType="text"
+            android:padding="@dimen/padding_5dp"
+            android:textColor="@color/blackGrey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_10dp"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:fontFamily="@font/google_sans"
+            android:padding="@dimen/padding_5dp"
+            android:text="Enter Camp Day"
+            android:textColor="@color/blackish"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/inputDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_10dp"
+            android:layout_marginBottom="@dimen/padding_5dp"
+            android:background="@color/transparent"
+            android:fontFamily="@font/google_sans"
+            android:hint="1-7"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="@dimen/padding_5dp"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

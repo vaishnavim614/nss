@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+task push(type: Exec) {
+    workingDir "${buildDir}"
+    println(workingDir)
+    commandLine 'rclone'
+    //args = ['delete', 'work:nss/']
+    args = ['copy', 'outputs\\apk\\debug\\app-debug.apk', 'work:nss/']
+}
+android {
+    compileSdkVersion 34
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.test.nss"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    /*
+     Remove 'signingConfigs' and 'debug' for personal builds
+     m.jks is keystore file for signing builds, rename m.jks to your keystore to get use cli build (:
+     Helper field are defined in gradle.properties
+     */
+    signingConfigs {
+        debug {
+
+
+            // Optional, specify signing versions used
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    allprojects {
+        repositories {
+            maven { url 'https://jitpack.io' }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.drawerlayout:drawerlayout:1.1.0"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation "androidx.navigation:navigation-fragment:2.3.0"
+    implementation "androidx.navigation:navigation-ui:2.3.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
+
+    //Custom Libs
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
+
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.2.3'
+    implementation 'com.surahul:bounce:1.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'me.toptas.fancyshowcase:fancyshowcaseview:1.3.3'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'me.itangqi.waveloadingview:library:0.3.5'
+    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
+    implementation 'com.airbnb.android:lottie:3.6.0'
+    implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-andx'
+
+
+    /*implementation ('com.github.chtgupta:FadeInTextView-Android:2.1.0') {
+        exclude module: 'app'
+    }*/
+    implementation "androidx.work:work-runtime:2.4.0"
+    //End Custom libs
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

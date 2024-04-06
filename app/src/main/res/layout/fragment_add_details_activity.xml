@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camp_act_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".ui.main.AddDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_3dp"
+        android:layout_marginEnd="@dimen/space_3dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_5dp"
+            android:layout_marginEnd="@dimen/padding_5dp"
+            android:elevation="@dimen/space_10dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/padding_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/act_bg_lines_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center"
+                    android:paddingStart="1dp"
+                    android:text="Assigned Activity Name:"
+                    android:textColor="@color/blackish"
+                    android:textSize="@dimen/text_18sp" />
+
+                <TextView
+                    android:id="@+id/actdetailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/drpdown_actAssignName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_marginTop="@dimen/padding_5dp"
+                    android:minHeight="30dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_5dp"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:layout_marginEnd="@dimen/padding_5dp"
+            android:elevation="@dimen/space_10dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/padding_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/act_bg_lines_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center"
+                    android:text="Activity Description:"
+                    android:textColor="@color/blackish"
+                    android:textSize="@dimen/text_18sp" />
+
+                <EditText
+                    android:id="@+id/act_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/padding_5dp"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/google_sans"
+                    android:hint="Enter activity description..."
+                    android:maxLength="500"
+                    android:minHeight="30dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_5dp"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:layout_marginEnd="@dimen/padding_5dp"
+            android:layout_marginBottom="@dimen/space_10dp"
+            android:elevation="@dimen/space_10dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/padding_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/act_bg_lines_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center"
+                    android:text="Hours Worked:"
+                    android:textColor="@color/blackish"
+                    android:textSize="@dimen/text_18sp" />
+
+                <EditText
+                    android:id="@+id/actHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="@dimen/padding_5dp"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/google_sans"
+                    android:hint="1-10"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:minHeight="30dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_5dp"
+            android:layout_marginEnd="@dimen/padding_5dp"
+            android:layout_marginBottom="@dimen/padding_5dp"
+            android:elevation="@dimen/space_10dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/padding_4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/act_bg_lines_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:layout_marginTop="@dimen/space_10dp"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center"
+                    android:text="Activity Date:"
+                    android:textColor="@color/blackish"
+                    android:textSize="@dimen/text_18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center"
+                    android:layout_marginTop="-5dp"
+                    android:background="?attr/background"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/todayBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="Today"
+                        android:textColor="@color/pastel_blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/actDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/space_10dp"
+                    android:fontFamily="@font/google_sans"
+                    android:hint="YYYY/MM/DD"
+                    android:inputType="text"
+                    android:minHeight="30dp"
+                    android:textSize="@dimen/text_18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_10dp"
+        android:gravity="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/addSend"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/padding_5dp"
+            android:background="@drawable/ic_tick_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_10dp"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/backActDetail"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/padding_5dp"
+            android:background="@drawable/ic_back_24" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/workLinear"
+    android:minHeight="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textColor="@color/blackGrey"
+        android:fontFamily="@font/google_sans"
+        android:id="@+id/nature_of_work"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/blackish" />
+
+    <TextView
+        android:textColor="@color/blackGrey"
+        android:fontFamily="@font/google_sans"
+        android:id="@+id/total_hours_work"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="-10dp"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_5dp"
+        android:layout_marginEnd="@dimen/padding_5dp"
+        android:layout_weight="0.9"/>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/blackish" />
+
+    <TextView
+        android:textColor="@color/blackGrey"
+        android:fontFamily="@font/google_sans"
+        android:id="@+id/comp_hours_work"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/blackish" />
+
+    <TextView
+        android:textColor="@color/blackGrey"
+        android:fontFamily="@font/google_sans"
+        android:id="@+id/rem_hours_work"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.2"
+        android:gravity="center" />
+</LinearLayout>

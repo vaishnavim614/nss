@@ -1,0 +1,118 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="background">@color/transparent</item>
+        <item name="colorPrimary">@color/blackish</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/blackGrey</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item> -->
+    </style>
+
+    <style name="AppTheme2" parent="AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="scrollbar_shape_style">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+            
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/thumb</item>
+    </style>
+
+    <style name="datePick" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:headerYearTextAppearance">@style/headerColors</item>
+        <item name="android:headerMonthTextAppearance">@style/headerColors</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="BottomSheetStyleTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="headerColors" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="inputDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="delDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--<style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>-->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="signUp">
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:layout_marginRight">18sp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColorHint">@color/signupHint</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:minHeight">47dp</item>
+    </style>
+
+    <style name="font">
+        <item name="android:fontFamily">@font/google_sans</item>
+    </style>
+
+    <style name="focusTitleStyle">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+    </style>
+
+    <style name="wave_title_right">
+        <item name="android:textColor">@color/blackGrey</item>
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:paddingStart">@dimen/space_10dp</item>
+        <item name="android:paddingBottom">@dimen/space_3dp</item>
+        <item name="android:textSize">12.5sp</item>
+    </style>
+
+    <style name="wave_title">
+        <item name="android:textColor">@color/blackGrey</item>
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:paddingEnd">@dimen/space_10dp</item>
+        <item name="android:paddingBottom">@dimen/space_3dp</item>
+        <item name="android:textSize">12.5sp</item>
+    </style>
+</resources>

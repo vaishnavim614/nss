@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".SignupActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/inputDetailsReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_20dp"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space_20dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fname"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/last_name"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Last Name"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fath_name"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Father Name"
+                android:inputType="textNoSuggestions" />
+
+            <EditText
+                android:id="@+id/mom_name"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Mother Name"
+                android:inputType="textNoSuggestions" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/email_in"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:importantForAutofill="noExcludeDescendants"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Email ID"
+                android:inputType="none" />
+
+            <EditText
+                android:id="@+id/contact_no"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Phone No"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="phone|number"
+                android:maxLength="10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20dp"
+            android:layout_marginBottom="@dimen/space_20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vec_clg_pref"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:foreground="@color/transparent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/blackish"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_clg"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:hint="Enter college name"
+                android:inputType="textNoSuggestions|textFilter"
+                android:paddingStart="40dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/vec_in"
+            style="@style/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/signup_roundbg"
+            android:hint="Enter last 5 digit for VEC"
+            android:inputType="number|textNoSuggestions"
+            android:maxLength="5"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/password2"
+                style="@style/signUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_roundbg"
+                android:hint="Re-type password"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loader2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/inputDetailsReg"
+        app:layout_constraintStart_toStartOf="@+id/inputDetailsReg"
+        app:layout_constraintTop_toBottomOf="@+id/inputDetailsReg">
+
+        <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+            android:id="@+id/lazyloader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:lazyloader_animDur="350"
+            app:lazyloader_dotsDist="8dp"
+            app:lazyloader_dotsRadius="6dp"
+            app:lazyloader_firstDelayDur="100"
+            app:lazyloader_firstDotColor="#00CCFF"
+            app:lazyloader_interpolator="@android:anim/accelerate_decelerate_interpolator"
+            app:lazyloader_secondDelayDur="350"
+            app:lazyloader_secondDotColor="#00ACD6"
+            app:lazyloader_thirdDotColor="#3283C1" />
+
+        <Button
+            android:id="@+id/signup_post"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ripple_signup"
+            android:gravity="center"
+            android:text="Finish"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

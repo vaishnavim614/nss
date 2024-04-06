@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">Ediary</string>
+    <string name="congrats">Congratulations</string>
+    <string name="edittextUsername"><font size="14">Username</font></string>
+    <string name="edittextPassword"><font size="14">Password</font></string>
+    <string name="title_activity_ediary">ediary</string>
+
+    <string name="menu_main_frag">@string/home</string>
+    <string name="menu_activity">Activity List</string>
+    <string name="menu_work_hours">My Hours</string>
+    <string name="menu_camp">Camp</string>
+    <string name="menu_help">Help</string>
+
+    <string name="univ">Univeristy\nDistrict</string>
+    <string name="area1">Area Based Project 1</string>
+    <string name="area2">Area Based Project 2</string>
+
+    <string name="area">Area Based Project 1–2</string>
+    <string name="clg">College\nWork</string>
+
+    <string name="camp_details">Enter your everyday camp details below</string>
+
+    <string name="help_details">Contact Us</string>
+    <string name="completed_hours">Hours\nWorked</string>
+    <string name="nature_of_work">Nature\nOf Work</string>
+    <string name="remaining_hours">Remaining\nHours</string>
+
+    <string-array name="days">
+        <item>DAY 1</item>
+        <item>DAY 2</item>
+        <item>DAY 3</item>
+        <item>DAY 4</item>
+        <item>DAY 5</item>
+        <item>DAY 6</item>
+        <item>DAY 7</item>
+    </string-array>
+
+    <string name="contact_no">Contact No: </string>
+    <string name="email">Email: </string>
+    <string name="enter_details">Click On the Respective Year to enter your\nDaily Activity Details</string>
+    <string name="nss_details">National Service Scheme\n\n Volunteer\'s\n\nE-DIARY</string>
+
+    <string-array name="valOfActNames">
+        <item>First Year University</item>
+        <item>First Year Area Based One</item>
+        <item>First Year Area Based Two</item>
+        <item>First Year College</item>
+        <item>Second Year University</item>
+        <item>Second Year Area Based One</item>
+        <item>Second Year Area Based Two</item>
+        <item>Second Year College</item>
+    </string-array>
+
+    <string-array name="labelOfActNames">
+        <item>13</item>
+        <item>121</item>
+        <item>122</item>
+        <item>11</item>
+        <item>23</item>
+        <item>212</item>
+        <item>222</item>
+        <item>21</item>
+    </string-array>
+
+    <string name="home">My Diary</string>
+    <string name="menu_leader">Leader</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="total_hours">Total\nHours</string>
+    <string name="college_work">College Work</string>
+    <string name="info">App Info</string>
+    <string name="not_pend_desc">Yay!\nNo Activities\nPending to approve</string>
+    <string name="mu">MUMBAI UNIVERSITY</string>
+    <string name="info_desc">Below are the people and important assets for\ncompletion.</string>
+
+    <string name="not_me_but_you">\"NOT ME BUT YOU\"</string>
+    <string name="text1">\"I Solemnly pledge to work with dedication to
+preserve and strengthen the freedom and integrity of
+the nation.
+I further affirm that I shall never resort to
+violence and that all difference and disputes relating
+to religion, language, region or other political or
+economic grievance should be settled by peaceful
+and constitutional means.\"\n\nNote:\n1. The Volunteer must read the Page Nos: 1 to 7.\n2. The Volunteer must fill the pages 22 and 23.\n3. The Volunteer must fill page 19 the day he/she visits first time the Adopted area.\n\nThis Diary contains information regarding aims
+and objectives, records of work done volunteer and identity card of NSS volunteer.
+Maintenance of this Diary is compulsory for all
+the volunteers and they must carry this
+Diary while working in the field/camp.
+</string>
+    <string name="text2">MOTTO OF NSS\nNOT ME BUT YOU\nSTORY OF N.S.S. EMBLEM\n\nThe NSS symbol is embossed on the NSS badge. The NSS volunteers wear it while, undertaking various programmes of community service. The Konark
+wheel in the symbol has eight bars which represents
+24 hours of the day. Hence the badge reminds the
+wearer to be in readiness for service of the nation
+round the clock i.e. for 24 hours. The red colour in the
+badge indicates that the NSS volunteers are full of
+blood. i.e. lively. active and spirited. The navy blue color
+indicate the cosmos of which the NSS is tiny part
+ready to contribute its share for the welfare of mankind.\n\nService to Nation Service to Self
+    </string>
+    <string name="text3">1. Understand the community in which they work.\n2. Understand themselves of relation to their community.\n3. Identify the needs and problems of the community\n
+        in the solution of which they can be involved.\n4. Develop among themselves a sense of social and
+        Civic responsibility\n5. Apply their education in finding practical solution
+        to individual and community problems.\n6. Develop - competence required for group - living
+        and sharing responsibilities.\n7. Gain skills in mobilising community participation.\n8. Acquire leadership qualities and democratic attitude.\n9. Develop capacity to meet emergencies and
+        disasters.\n10. Practise national integration.
+    </string>
+    <string name="text4">The NSS was launched on September 24, 1969 in 37
+        Universities covering all States.
+        The cardinal principle of the programme is that it is organised
+        by the students themselves and both students and teachers
+        through their combined participation in social service, get a
+        sense of involvement in the tasks of National Development.
+        Besides the students, particularly, obtain work experience
+        which might help them to find avenue of self - employment or
+        employment in any organisation at the end of their university
+        career\nTerms of NSS:\nA student enrolled in NSS is expected to put in at least 120 hours
+        of social service in 2 projects in an academic year and shall be
+        entitle to get a certificate from the University on completion of 2
+        years term i.e. 240 hours. A student is also expected to attend at
+        least one Special Camp in 2 year of NSS.
+        It is suggested that out of 120 hours of social service, each
+        student is expected to put in during the academic year, a
+        least 20 hours be used in the first year for orientation
+        programmes.
+    </string>
+
+    <string name="text5">•	Environment and Conservation.\n•	Health family welfare and Nutrition Programme.\n•	Programme aimed at creating awareness for
+improvement of the status of women (women welfare).\n•	Social Service Programmes: Working with Hospital,
+Institutions, Organisations, Orphanages, home of
+the aged, depending upon the local needs and priorities.\n•	Production Oriented Programmes.\n•	Relief and Rehabilitation work During Natural
+Calamities.\n•	Education and Recreations: like preschool education,
+School drop-outs, remedial coaching recreation
+programme for community, eradication of social evils,
+legal literacy, Consumer awareness. Non-formal
+education and adult education (short duration)\nThis is illustrative list of programmes, it would be open to
+each NSS unit to undertake one or more of these
+programmes or any other activities which may seem
+desirable to them according to local needs under
+the intimation to University NSS Unit.
+    </string>
+
+    <string name="text6">1.	All volunteers shall work under the guidance of
+group leader nominated by the Programme Officer.\n2. They shall make themselves worthy of the
+confidante and co-operation of the group/
+community leadership.\n3. They shall scrupulously avoid entering into any
+controversial issue.\n4. They should keep day to day record of their activities/
+experience in the enclosed pages of the diary and
+submit the same to the group leader 7 Programme
+Officer for periodic guidance and record.\n5. They should submit the filled diary with all project
+activities participated during the year by 31st January
+to Programme Officer for preparing list of eligible
+volunteers for the benefit of marks as per Ordinance 229.\n6. The volunteers are not allowed to work
+independently in any project on their own. They
+should work in the agency/village/slum, approved/
+adopted by the college NSS Unit.\n7. The maximum credit in terms of hours of work in
+campus project which includes orientation,
+attending meeting, Blood donation and work in college campus will be 20 hours.\n8. The volunteer must put in minimum 20 hours in an
+activity to be considered for the scheme. The
+maximum credit in terms of hours of work in one
+activity will be limited to 60 hours.\n9. In case of any controversy such as selection of
+volunteers for the Special Camps, or any project
+arises, the policy decided by the college for
+selection, will be final and binding on all the volunteers.\n10. Volunteers should carry this dairy and NSS badge
+with them while working in the project and it should
+be shown to the competent authority as and when demanded.
+    </string>
+
+    <string name="text7">Fund Collection activity should not be undertaken
+by the College NSS Unit under any circumstances
+without written approval from the NSS
+Programme Co-ordinator, University of Mumbai.
+    </string>
+    <string name="text0">On 24 September 1969\n\nStarted by the then Union Education Minister V.K.R.V. Rao launched the NSS at 37 universities all states. The scheme has been extended to all states and universities in the country, and also +2 level institutes in many states.
+    </string>
+    <string name="about_bottom">Creating a diary just for you...</string>
+</resources>

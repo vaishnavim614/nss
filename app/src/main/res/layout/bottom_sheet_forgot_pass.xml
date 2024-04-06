@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetFrame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margin_15dp"
+    android:paddingTop="@dimen/margin_15dp"
+    android:paddingEnd="@dimen/margin_15dp"
+    android:paddingBottom="@dimen/space_10dp">
+
+    <LinearLayout
+        android:id="@+id/sliding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.agrawalsuneet.dotsloader.loaders.SlidingLoader
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:slidingloader_animDur="750"
+            app:slidingloader_distanceToMove="10"
+            app:slidingloader_dotsDist="8dp"
+            app:slidingloader_dotsRadius="6dp"
+            app:slidingloader_firstDotColor="@color/one"
+            app:slidingloader_secondDotColor="@color/blackGrey"
+            app:slidingloader_thirdDotColor="@color/pastel_cyan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLinear"
+        android:layout_marginBottom="@dimen/space_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_bold"
+            android:text="Enter Email"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/emailBottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autofillHints="email"
+                android:background="@color/transparent"
+                android:fontFamily="@font/google_sans"
+                android:hint="xyz@abc.com"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/bottom_sheet_text"
+                android:textSize="@dimen/text_14sp" />
+
+            <ImageView
+                android:id="@+id/nextBottom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_weight="0.2"
+                android:contentDescription="@null"
+                android:paddingStart="@dimen/margin_15dp"
+                app:srcCompat="@drawable/ic_arrow_left" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/emailLinear">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_bold"
+            android:text="Enter Password"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/yes"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/otpBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="Enter otp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bottom_sheet_text"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/text_14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/yes"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="Type password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bottom_sheet_text"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/text_14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/yes"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passBottom2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="Re type password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bottom_sheet_text"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/text_14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/nextBottom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:layout_marginEnd="@dimen/space_10dp"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_arrow_left" />
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_fileName="checked_loading.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+</LinearLayout>

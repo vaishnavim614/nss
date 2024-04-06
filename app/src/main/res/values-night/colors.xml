@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimaryDark">#1759CA</color>
+    <color name="colorPrimary">#4B9EF6</color>
+    <color name="colorPrimaryLight">#78ACDF</color>
+    <color name="white">#131313</color>
+    <color name="off_white">#1C1C1C</color>
+    <color name="blackGrey">#AEAEAE</color>
+    <color name="black">#FFFFFF</color>
+    <color name="grey">#8C8C8C</color>
+    <color name="lightGrey">#373535</color>
+    <color name="blackish">#D1D1D1</color>
+    <color name="help_start">#4EB8FF</color>
+    <color name="help_end">#003763</color>
+    <color name="pastel_blue">#00188F</color>
+    <color name="signupHint">@color/grey</color>
+    <color name="regBoxBg">#33FFFFFF</color>
+    <color name="summary">@color/colorPrimaryDark</color>
+    <color name="greyWhite">@color/blackish</color>
+    <color name="ripple">#1976CF</color>
+    <color name="colorPrimaryShadow">#4DA4FF</color>
+    <color name="colorStartLogin">@color/help_end</color>
+    <color name="colorLoginPrimD">@color/help_start</color>
+    <color name="design_snackbar_background_color" tools:override="true">@color/colorPrimaryDark
+    </color>
+    <color name="bottom_sheet_text">#3A83FF</color>
+    <color name="shimmer_bg">#4D007CFF</color>
+    <color name="wave_border">#4EB8FF</color>
+</resources>

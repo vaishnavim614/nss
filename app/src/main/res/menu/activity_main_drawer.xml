@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Ediary">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home_24"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/nav_main"
+                    android:icon="@drawable/ic_diary_24"
+                    android:title="@string/home" />
+
+                <item
+                    android:id="@+id/nav_acti"
+                    android:icon="@drawable/ic_act_list"
+                    android:title="@string/menu_activity" />
+                <item
+                    android:id="@+id/nav_work"
+                    android:icon="@drawable/ic_hours"
+                    android:title="@string/menu_work_hours" />
+                <item
+                    android:id="@+id/nav_camp"
+                    android:icon="@drawable/ic_camp"
+                    android:title="@string/menu_camp" />
+                <item
+                    android:id="@+id/nav_leader"
+                    android:icon="@drawable/ic_vol_approve_24"
+                    android:title="@string/menu_leader" />
+            </menu>
+        </item>
+
+        <item android:title="Others">
+            <menu>
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@drawable/ic_support"
+                    android:title="@string/menu_help" />
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@drawable/ic_help"
+                    android:title="@string/info" />
+                <item
+                    android:icon="@drawable/nss_logo"
+                    android:id="@+id/nav_data"
+                    android:title="About NSS" />
+            </menu>
+        </item>
+    </group>
+</menu>
